@@ -1,0 +1,19 @@
+--cpu Cortex-M3
+".\objects\startup_mdr32f9qx.o"
+".\objects\system_mdr32f9qx.o"
+".\objects\main.o"
+".\objects\tims.o"
+".\objects\systick.o"
+".\objects\clks.o"
+".\objects\uart.o"
+".\objects\mdr32f9qx_port.o"
+".\objects\mdr32f9qx_rst_clk.o"
+".\objects\mdr32f9qx_timer.o"
+".\objects\mdr32f9qx_eeprom.o"
+".\objects\mdr32f9qx_bkp.o"
+".\objects\mdr32f9qx_uart.o"
+".\objects\eibutton.o"
+--strict --scatter ".\Objects\EmuliButton.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\EmuliButton.map" -o .\Objects\EmuliButton.axf
